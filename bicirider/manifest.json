@@ -1,7 +1,7 @@
 {
-    "name": "Mobile App",
-    "short_name": "Mobile App",
-    "start_url": "/cm/shell/app/index.html",
+    "name": "Bici Rider",
+    "short_name": "Bici Rider",
+    "start_url": "/bicirider/index.html",
     "display": "standalone",
     "background_color": "white",
     "theme_color": "black"
