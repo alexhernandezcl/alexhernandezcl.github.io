@@ -1,0 +1,196 @@
+<html lang="es"><head>
+        <meta charset="utf-8">
+        <meta name="theme-color" content="black">
+        <meta name="Description" content="The PWS Basic Template">
+        <title>Mobile App</title>
+        <link rel="manifest" href="manifest.json">
+
+        <link rel="stylesheet" type="text/css" href="css/icofont.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            header {
+               
+                background: url(imgs/bg.png) center top;
+                background-size: cover;
+                overflow: hidden;
+                height: 24vh;
+                text-align:center;
+            }
+            header > i{
+                font-size: 5rem;
+                margin: 0.5rem;
+                vertical-align: middle;
+                display: block;
+            }
+            header h3{
+                font-size: 1.6rem;
+                margin:0;
+                padding:0.5rem;
+            }
+            ul#tabs{
+                display: block;
+                width:100%;
+                margin: 0;
+                padding: 0;
+                list-style: none;   
+                background:#7878bf;
+            }
+
+            ul#tabs li{
+                text-align: center;
+                margin: 0;
+                padding: 0rem;
+                display: inline-block;
+                width: 30%;
+                font-size: 0.8rem;
+                height: 2.5rem;
+                line-height: 2.5rem;
+            }
+
+            ul#tabs li a{
+                text-decoration: none;
+                color:#fff;
+            }
+            ul#tabs li a i{
+                font-size: 1.5rem;
+                vertical-align: middle;
+                margin-right: 0.2rem;
+            }
+            ul#tabs li.active{
+                font-weight: bold;
+                background: #2097e0;
+            }
+            ul#myRides {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                display: block;
+            }
+            ul#myRides > li {
+                margin-bottom: 1rem;
+                background: #fff;
+                padding: 0;
+                border-radius: 0.6rem;
+                overflow: hidden;
+            }
+
+            ul#myRides > li h4{
+                padding:0.5rem;
+                margin:0;
+            }
+            div.briefing {
+                border-bottom: solid 1px #aaa;
+                font-size: 1.5rem;
+                padding: 0.5rem 0.5rem 0 0.5rem;
+                margin: 0.5rem;
+                height: 2rem;
+                line-height: 2rem;
+            }
+            div.briefing span{
+                display:inline-block;
+                text-align:center;
+
+            }
+
+            div.briefing span.startTime,
+            div.briefing span.endTime{
+                width:18%;
+                float:left;
+            }
+
+            div.briefing span.endTime{
+                float:right;
+            }
+            div.briefing span.distance{
+                width:58%;
+                font-size: 0.8rem;
+            }
+            div.options{
+                background: #8176d0;
+                height: 2rem;
+                line-height: 2rem;
+                color: #fff;
+            }
+            div.options ul{
+                margin:0.5rem;;
+                padding:0;
+                list-style: none;
+            }
+
+            div.options ul li{
+                display: inline-block;
+                width:48%;
+                text-align:center;
+            }
+
+            div.options ul li a{
+                text-decoration: none;
+                color:#fff;
+                text-shadow: 1px 1px 1px #000;
+            }
+        </style>
+    </head>
+    
+    <body class="fullscreen">
+            <header>
+                <i class="icofont-bicycle"></i> 
+                <h3>Bici Rider</h3>
+            </header>
+            <ul id="tabs">
+                    <li class="active">
+                        <a href="#"><i class="icofont-bicycle-alt-1"></i> Mis Viajes</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icofont-dashboard-web"></i> Estadísticas</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icofont-options"></i> Opciones</a>
+                    </li>
+                </ul>
+            <main>
+                <ul id="myRides">
+                        <li>
+                            <h4>30/08/2019</h4>
+                            <div class="briefing">
+                                <span class="startTime">9:32</span>
+                                <span class="distance">3.6km</span>
+                                <span class="endTime">9:44</span>
+                                
+                            </div>
+                            <div class="options">
+                                <ul>
+                                        <li>
+                                            <a href="#">Ver</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Compartir</a>
+                                        </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <h4>29/08/2019</h4>
+                            <div class="briefing">
+                                <span class="startTime">19:32</span>
+                                <span class="distance">3.2km</span>
+                                <span class="endTime">19:40</span>
+                                
+                            </div>
+                            <div class="options">
+                                <ul>
+                                        <li>
+                                            <a href="#">Ver</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Compartir</a>
+                                        </li>
+                                </ul>
+                            </div>
+                        </li>
+                </ul>
+            </main>
+           
+            <!--script src="js/main.js"></script-->
+    </body>
+    </html>

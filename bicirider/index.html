@@ -1,0 +1,80 @@
+<html lang="es"><head>
+        <meta charset="utf-8">
+        <meta name="theme-color" content="black">
+        <meta name="Description" content="The PWS Basic Template">
+        <title>BiciRider</title>
+        <link rel="manifest" href="manifest.json">
+        <link rel="stylesheet" type="text/css" href="css/icofont.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+                body{
+                        background: url(imgs/bg.png);
+                        background-size: cover;
+                        overflow: hidden;       
+                        
+                }
+                #loginContainer{
+                        position: absolute;
+                        top: 0;
+                        background: rgba(0, 0, 0, 0.5);
+                        color: #fff;
+                        width: 100vw;
+                        margin: 0;
+                        padding: 0;
+                        text-align: center;
+                        padding-bottom: 5rem;
+                        height: 100vh;
+                        padding-top:10rem;
+                }
+                input{
+                        background: transparent;
+                        border: none;
+                        border-bottom: solid 1px#888;
+                        border-radius: 0;
+                        color: #fff;
+                        width: 80%;
+                        margin: 1rem 10%;
+                        font-size: 1rem;
+                        padding: 0.3rem;
+                }
+                button{
+                        display:block;
+                        width:80%;
+                        padding:0.5rem;
+                        border:solid 1px #aaa;
+                        background: #fff;
+                        border-radius: 0.3rem;
+                        margin:1rem 10%;
+                }
+                
+                #regOptions a{
+                        font-size:2rem;
+                        color:#fff;
+                        text-decoration: none;
+                        margin:0 1rem;
+                }
+        </style>
+    </head>
+    
+    <body class="fullscreen">
+        <div id="loginContainer">
+                <h1 style="font-size: 4em;margin: 1rem;"><i class="icofont-bicycle"></i></h1>
+                <h1>BiciRider</h1>
+                <div>
+                        <input autocomplete="off" type="text" name="user" id="user"  placeholder="Username"/>
+                        <input autocomplete="off" type="password" name="password" id="password" placeholder="Password" />
+                        <div>
+                                <button id="btnLogin">Login</button>
+                        </div>
+                        <div id="regOptions">
+                                <h5>Registrese para Ingresar</h5>
+                                <a href="#regEmail"><i class="icofont-email"></i></a>
+                                <a href="#regFB"><i class="icofont-facebook"></i></a>
+                                <a href="#regG"><i class="icofont-brand-google"></i></a>
+                                
+                        </div>
+                </div>
+        </div>
+        <script src="init.js"></script>
+    </body></html>
