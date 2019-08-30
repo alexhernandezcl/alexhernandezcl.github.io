@@ -22,6 +22,12 @@
                 margin: 0.2rem;
                 display: block;
             }
+            header i.exit {
+                float: left;
+                font-size: 2rem;
+                transform: rotate(180deg);
+                color:#aaa;
+            }
             header h3{
                 font-size: 1.6rem;
                 margin:0;
@@ -136,6 +142,7 @@
     
     <body class="fullscreen">
             <header>
+                <i class="exit icofont-exit"></i>
                 <i class="icofont-bicycle"></i> 
                 <h3>Bici Rider</h3>
             </header>
@@ -194,5 +201,12 @@
             </main>
            
             <!--script src="js/main.js"></script-->
+            <script>
+                (()=>{
+                    document.querySelector("i.exit").addEventListener("click", e =>{
+                        window.location = "index.html";
+                    })
+                })();
+            </script>
     </body>
     </html>
