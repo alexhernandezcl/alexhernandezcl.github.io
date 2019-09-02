@@ -232,10 +232,14 @@
                     sendMark(msg);
                     map.setCenter({lat:position.coords.latitude, lng:position.coords.longitude});
                 }
+                var done = false;
                 function sendMark(msg){
                     var url = "http://api.alexhernandez.cl/bicirider/mark";
                     fetch(url, {method:"POST", body:JSON.stringify(msg)}).then(mr =>mr.json()).then(resp =>{
-                        
+                        if(!done){
+                            alert(JSON.stringify(resp));
+                            done = !done;
+                        }
                     })
                 }
                 function initMap(){
