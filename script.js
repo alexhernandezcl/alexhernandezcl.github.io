@@ -11,3 +11,5 @@ function test(){
     console.log("A", a)
 
 }
+
+console.log(sumauno(a));
